@@ -1,3 +1,4 @@
+package edu.AprendendoSintaxeJava.AnatomiaClasses;
 public class StudentNewsletter 
 {
     public static void main(String[] args) 
