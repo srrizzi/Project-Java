@@ -1,18 +1,40 @@
-## Getting Started
+# Desafio Controle de Fluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um pequeno sistema de validação de processo seletivo que recebe dois parâmetros via terminal e realiza uma contagem com base nesses parâmetros. Se o primeiro parâmetro for maior que o segundo, uma exceção customizada é lançada.
 
-## Folder Structure
+## Estrutura do Projeto
 
-The workspace contains two folders by default, where:
+O projeto contém duas classes principais:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. `Contador.java`: Contém a lógica principal do programa.
+2. `ParametrosInvalidosException.java`: Representa a exceção customizada que é lançada quando o primeiro parâmetro é maior que o segundo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Como Executar
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Pré-requisitos
 
-## Dependency Management
+- Java Development Kit (JDK) instalado.
+- Um terminal ou IDE para executar o código.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Passos
+
+1. Clone o repositório para sua máquina local.
+2. Navegue até o diretório do projeto.
+3. Compile as classes Java:
+    ```sh
+    javac src/Contador.java src/ParametrosInvalidosException.java
+    ```
+4. Execute o programa:
+    ```sh
+    java src/Contador
+    ```
+
+### Exemplo de Uso
+
+Ao executar o programa, você será solicitado a inserir dois parâmetros:
+
+```sh
+Digite o primeiro parâmetro:
+12
+Digite o segundo parâmetro:
+30
